@@ -1,0 +1,120 @@
+/* ====== STIL GENERAL ====== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #555;
+}
+
+/* ====== HEADER ====== */
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 250px;  
+  gap: 30px;  
+}
+
+header img {
+  width: 182px;
+  height: 38px;
+}
+
+/* ====== NAVIGAȚIE ====== */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  padding: 40px 60px;
+}
+
+.nav-acasa { background-color: #2abf9e; }
+.nav-scanstart { background-color: #ffc526; }
+.nav-servicii { background-color: #9adc00; }
+.nav-tarife { background-color: #f24358; }
+.nav-contact { background-color: #c400a8; }
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}       
+
+/* ====== SECȚIUNI ====== */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+/* Div-ul cu textul - aceeași lățime în ambele secțiuni */
+section > div:first-child {
+  flex: 0 0 600px; /* Lățime fixă pentru text */
+  max-width: 600px;
+}
+
+/* Div-ul cu imaginea */
+section > div:last-child {
+  flex-shrink: 0; /* Imaginea nu se micșorează */
+}
+
+/* ====== TEXT ====== */
+section h2 {
+  color: #222;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+section p {
+  color: #888;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+section a {
+  color: #2abf9e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* ====== IMAGINILE ====== */
+section img {
+  width: 420px;
+  height: auto;
+  display: block;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0 20px 250px;
+  background-color: #34383c;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+footer img {
+  width: 50px;
+}
