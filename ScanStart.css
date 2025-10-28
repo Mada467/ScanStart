@@ -1,18 +1,25 @@
-/* ====== STIL GENERAL ====== */
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #555;
+  padding-top: 100px;
 }
 
-/* ====== HEADER ====== */
+/*  HEADER  */
 header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  width:  100%;
+  background-color: #fff; 
+  z-index: 1000; 
   margin-top: 20px;
   display: flex;
   align-items: center;
-  padding: 0 0 0 250px;  
+  padding: 20px 0 20px 250px;  
   gap: 30px;  
 }
 
@@ -21,7 +28,7 @@ header img {
   height: 38px;
 }
 
-/* ====== NAVIGAȚIE ====== */
+/*  NAVIGAȚIE  */
 nav ul {
   display: flex;
   list-style: none;
@@ -30,22 +37,73 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 15px;
   color: white;
   padding: 40px 60px;
 }
 
-.nav-acasa { background-color: #2abf9e; }
-.nav-scanstart { background-color: #ffc526; }
-.nav-servicii { background-color: #9adc00; }
-.nav-tarife { background-color: #f24358; }
-.nav-contact { background-color: #c400a8; }
-
 nav ul li a {
   text-decoration: none;
   color: white;
-}       
+
+}
+
+/* Culori pentru butoanele de navigație */
+.nav-acasa { background-color: #2abf9e; }
+.nav-scanstart { 
+  background-color: #ffc526;
+  position: relative;
+}
+.nav-servicii { 
+  background-color: #9adc00;
+  position: relative;
+}
+.nav-tarife { background-color: #f24358; }
+.nav-contact { background-color: #c400a8; }
+
+/*  SUBMENIU DROPDOWN  */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3a3a;
+  list-style: none;
+
+}
+
+/* Afișare submeniu la hover */
+.nav-scanstart:hover .submenu,
+.nav-servicii:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Stiluri generale pentru linkurile din submeniu */
+.submenu li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.nav-scanstart .submenu li a {
+  color: #ffc526;
+}
+
+
+.nav-servicii .submenu li a {
+  color: #9adc00;
+}
+
+.submenu li a:hover {
+  color: #2abf9e;
+}
 
 /* ====== SECȚIUNI ====== */
 section {
@@ -60,58 +118,63 @@ section {
 
 /* Div-ul cu textul - aceeași lățime în ambele secțiuni */
 section > div:first-child {
-  flex: 0 0 600px; /* Lățime fixă pentru text */
+  flex: 0 0 600px;
   max-width: 600px;
 }
 
 /* Div-ul cu imaginea */
 section > div:last-child {
-  flex-shrink: 0; /* Imaginea nu se micșorează */
+  flex-shrink: 0;
 }
 
-/* ====== TEXT ====== */
+/*  TEXT */
 section h2 {
   color: #222;
-  font-size: 28px;
+  font-size: 24px;       
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 20px;    
   margin-top: 0;
 }
 
 section p {
-  color: #888;
-  font-size: 17px;
-  line-height: 1.8;
-  margin-bottom: 15px;
+  color: #aaa;           
+  font-size: 15px;        
+  line-height: 1.6;      
+  margin-bottom: 8px;     
 }
 
 section a {
   color: #2abf9e;
   text-decoration: none;
   font-weight: 600;
+  font-size: 15px;        
 }
 
 section a:hover {
-  text-decoration: underline;
+  color: #222; 
 }
-
-/* ====== IMAGINILE ====== */
+/*  IMAGINILE  */
 section img {
   width: 420px;
   height: auto;
   display: block;
 }
 
-/* ====== FOOTER ====== */
+/*  FOOTER  */
 footer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 20px 0 20px 250px;
-  background-color: #34383c;
+  justify-content: space-between;  
+  padding: 20px 250px;              
+  background-color: #4a5054;        
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 80px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
 
