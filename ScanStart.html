@@ -1,83 +1,104 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ScanStart</title>
-  <link rel="stylesheet" href="ScanStart.css">
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="ScanStart Logo">
+  <!DOCTYPE html>
+  <html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanStart</title>
+    <link rel="stylesheet" href="ScanStart.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="ScanStart Logo">
 
-<nav>
-  <ul>
-    <li class="nav-acasa"><a href="#">ACASA</a></li>
-    <li class="nav-scanstart">
-      <a href="#">SCANSTART</a>
-      <ul class="submenu">
-        <li><a href="#">CUM FUNCȚIONEAZĂ?</a></li>
-        <li><a href="#">FUNCȚIONALITĂȚI</a></li>
-        <li><a href="#">AVANTAJE</a></li>
-        <li><a href="#">VERSIUNI</a></li>
-        <li><a href="#">ÎNTREBĂRI FRECVENTE</a></li>
-      </ul>
-    </li>
-    <li class="nav-servicii">
-      <a href="#">SERVICII</a>
-      <ul class="submenu">
-        <li><a href="#">SERVICII</a></li>
-        <li><a href="#">SCANSTART FOR HOTELS</a></li>
-        <li><a href="#">SCANSTART ADBLOCKER</a></li>
-        <li><a href="#">SUPORT TEHNIC</a></li>
-        <li><a href="#">APP MANAGEMENT</a></li>
-      </ul>
-    </li>
-    <li class="nav-tarife"><a href="#">TARIFE</a></li>
-    <li class="nav-contact"><a href="#">CONTACT</a></li>
-  </ul>
-</nav>
-  
-  </header>
+      <nav>
+        <ul>
+          <li class="nav-acasa"><a>ACASA</a>
+          <li class="nav-scanstart">
+            <a href="#">SCANSTART</a>
+            <ul class="submenu">
+              <li><a href="#">CUM FUNCȚIONEAZĂ?</a></li>
+              <li><a href="#">FUNCȚIONALITĂȚI</a></li>
+              <li><a href="#">AVANTAJE</a></li>
+              <li><a href="#">VERSIUNI</a></li>
+              <li><a href="#">ÎNTREBĂRI FRECVENTE</a></li>
+            </ul>
+          </li>
+          <li class="nav-servicii">
+            <a href="#">SERVICII</a>
+            <ul class="submenu">
+              <li><a href="#">SERVICII</a></li>
+              <li><a href="#">SCANSTART FOR HOTELS</a></li>
+              <li><a href="#">SCANSTART ADBLOCKER</a></li>
+              <li><a href="#">SUPORT TEHNIC</a></li>
+              <li><a href="#">APP MANAGEMENT</a></li>
+            </ul>
+          </li>
+          <li class="nav-tarife"><a href="#">TARIFE</a></li>
+          <li class="nav-contact"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section>
-    <div>
-      <h2>CE ESTE SCANSTART?</h2>
+    <section>
+      <div>
+        <h2>CE ESTE SCANSTART?</h2>
 
-      <p>
-        ScanStart este o soluție software & hardware pentru optimizarea proceselor
-        dintr-un birou notarial.
-      </p>
+        <p>
+          ScanStart este o soluție software & hardware pentru optimizarea proceselor
+          dintr-un birou notarial.
+        </p>
 
-      <p>
-        Automatizarea începe cu citirea datelor de identificare ale clienților cu ajutorul
-        unui scanner dedicat și excelează cu generarea automată a documentelor notariale.
-      </p>
+        <p>
+          Automatizarea începe cu citirea datelor de identificare ale clienților cu ajutorul
+          unui scanner dedicat și excelează cu generarea automată a documentelor notariale.
+        </p>
         <p><a href="#">AFLĂ CUM FUNCȚIONEAZĂ</a> •</p>
-        <p> sau vezi lista de <a href="#">ÎNTREBĂRI FRECVENTE</a> •</p>
-    </div>
+        <p>sau vezi lista de <a href="#">ÎNTREBĂRI FRECVENTE</a> •</p>
+      </div>
 
-    <div>
-      <img src="scanner.png" alt="Scanner ScanStart">
-    </div>
-  </section>
+      <div>
+        <img src="scanner.png" alt="Scanner ScanStart">
+      </div>
+    </section>
 
-  <section>
-    <div>
-      <h2>CE OFERA SCANSTART?</h2>
-        <p>Viteza,Acuratete,Gestiune,PLus-valoare,Flexibilitate</p>
+    <section>
+      <div>
+        <h2>CE OFERĂ SCANSTART?</h2>
+        <p>Viteză, Acuratețe, Gestiune, Plus-valoare, Flexibilitate</p>
         <p><a href="#">Detalii</a> •</p>
       </div>
 
-       <div>
-      <img src="app1.png" alt="Buletin virtual">
-    </div>
+      <div>
+        <img src="app1.png" alt="Buletin virtual">
+      </div>
     </section>
-    <footer>
-  <div class="footer-left">
-    <img src="onlylogo.png" alt="Logo">
+    <!-- FOOTER -->
+   <footer>
+    <div class="footer-left">
+    <img src="onlylogo.png" alt="Logo ScanStart">
     <span>© 2025 SC SCANSTART HARDWARE & SOFTWARE SRL</span>
-  </div>
-</footer>
-</body>
-</html>
+    </div>
+   </footer>
+
+    <!-- POP-UP PENTRU CEI -->
+    <div id="popup-overlay" class="popup-overlay">
+      <div class="popup-container">
+        <button class="popup-close" onclick="closePopup()">×</button>
+        
+        <img src="logo.png" alt="ScanStart Logo" class="popup-logo">
+        
+        <h2 class="popup-title">NOUTATE SCANSTART!</h2>
+        
+        <p class="popup-text">
+          Soluții noi pentru procesarea Cărții Electronice de Identitate (CEI)
+        </p>
+        
+        <a href="cei.html" class="popup-button" onclick="closePopup()">
+          Află mai multe despre soluțiile CEI
+        </a>
+      </div>
+    </div>
+
+    <script src="ScanStart.js"></script>
+  </body>
+  </html>

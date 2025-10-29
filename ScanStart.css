@@ -1,4 +1,3 @@
-
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -14,18 +13,17 @@ header {
   left: 0;
   right:0;
   width:  100%;
-  background-color: #fff; 
-  z-index: 1000; 
-  margin-top: 20px;
+  background-color: #fff;  
+  margin-top:none;
   display: flex;
   align-items: center;
-  padding: 20px 0 20px 250px;  
-  gap: 30px;  
+  padding: 8px 0 12px 220px;   
 }
 
 header img {
   width: 182px;
   height: 38px;
+  margin-right:50px; 
 }
 
 /*  NAVIGAȚIE  */
@@ -34,6 +32,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 1px; 
 }
 
 nav ul li {
@@ -41,12 +40,12 @@ nav ul li {
   font-size: 15px;
   color: white;
   padding: 40px 60px;
+  margin: 0; 
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-
 }
 
 /* Culori pentru butoanele de navigație */
@@ -70,7 +69,6 @@ nav ul li a {
   left: 0;
   background-color: #3a3a3a;
   list-style: none;
-
 }
 
 /* Afișare submeniu la hover */
@@ -96,7 +94,6 @@ nav ul li a {
   color: #ffc526;
 }
 
-
 .nav-servicii .submenu li a {
   color: #9adc00;
 }
@@ -105,7 +102,7 @@ nav ul li a {
   color: #2abf9e;
 }
 
-/* ====== SECȚIUNI ====== */
+/*  SECȚIUNI */
 section {
   display: flex;
   align-items: center;
@@ -153,6 +150,7 @@ section a {
 section a:hover {
   color: #222; 
 }
+
 /*  IMAGINILE  */
 section img {
   width: 420px;
@@ -180,4 +178,100 @@ footer {
 
 footer img {
   width: 50px;
+}
+
+/* POP*/
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Containerul pop-up-ului (căsuța albă) */
+.popup-container {
+  background-color: white;
+  width: 90%;
+  max-width: 450px; 
+  padding: 30px; 
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+/* Butonul X de închidere */
+.popup-close {
+  position: absolute;
+  top: 10px; 
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+
+/* Logo-ul din pop-up  */
+.popup-logo {
+  width: 180px; 
+  margin-bottom: 20px; 
+}
+
+/* Titlul pop-up-ului  */
+.popup-title {
+  color: #2abf9e;
+  font-size: 24px; 
+  font-weight: 700;
+  margin-bottom: 15px; 
+}
+
+/* Text descriere în pop */
+.popup-text {
+  color: #555;
+  font-size: 15px; 
+  line-height: 1.6;
+  margin-bottom: 20px; 
+}
+
+/* Zona cu linkurile */
+.popup-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  margin-bottom: 20px; 
+}
+
+.popup-links a {
+  color: #888;
+  text-decoration: none;
+  font-size: 15px; 
+}
+
+.popup-links a:hover {
+  color: #2abf9e;
+}
+
+/* Butonul  */
+.popup-button {
+  display: inline-block;
+  background-color: #2abf9e;
+  color: white;
+  padding: 14px 35px; 
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.popup-button:hover {
+  background-color: #24a589;
 }
