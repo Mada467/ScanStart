@@ -17,7 +17,7 @@ header {
   margin-top:none;
   display: flex;
   align-items: center;
-  padding: 8px 0 12px 220px;   
+  padding: 8px 0 12px 120px;   
 }
 
 header img {
@@ -39,8 +39,10 @@ nav ul li {
   font-weight: 500;
   font-size: 15px;
   color: white;
-  padding: 40px 60px;
-  margin: 0; 
+  padding: 40px 45px;
+  margin: 0;
+  flex: 1;
+  text-align: center;
 }
 
 nav ul li a {
@@ -59,10 +61,11 @@ nav ul li a {
   position: relative;
 }
 .nav-tarife { background-color: #f24358; }
-.nav-oferta { background-color: #7a8821; }
-
+.nav-oferta { 
+  background-color: #7a8821;
+  white-space: nowrap;
+}
 .nav-contact { background-color: #c400a8; }
-
 /*  SUBMENIU DROPDOWN  */
 .submenu {
   display: none;
