@@ -59,6 +59,8 @@ nav ul li a {
   position: relative;
 }
 .nav-tarife { background-color: #f24358; }
+.nav-oferta { background-color: #7a8821; }
+
 .nav-contact { background-color: #c400a8; }
 
 /*  SUBMENIU DROPDOWN  */
@@ -113,17 +115,6 @@ section {
   padding: 0 40px;
 }
 
-/* Div-ul cu textul - aceeași lățime în ambele secțiuni */
-section > div:first-child {
-  flex: 0 0 600px;
-  max-width: 600px;
-}
-
-/* Div-ul cu imaginea */
-section > div:last-child {
-  flex-shrink: 0;
-}
-
 /*  TEXT */
 section h2 {
   color: #222;
@@ -158,6 +149,24 @@ section img {
   display: block;
 }
 
+
+/* ANIMAȚII PENTRU IMAGINI */
+section img {
+  opacity: 0;
+  animation: show 0.5s ease forwards;
+}
+
+section:nth-of-type(2) img {
+  animation-delay: 0.3s;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*  FOOTER  */
 footer {
   display: flex;
@@ -180,7 +189,7 @@ footer img {
   width: 50px;
 }
 
-/* POP*/
+/* POP-UP */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -217,8 +226,6 @@ footer img {
   cursor: pointer;
   line-height: 1;
 }
-
-
 
 /* Logo-ul din pop-up  */
 .popup-logo {
